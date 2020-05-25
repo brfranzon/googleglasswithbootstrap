@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--************************HEAD********************************-->
+
+<head>
+    <meta charset="pt-br">
+    <meta charset="UTF-8" />
+    <title>Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" tabindex="text/css" href="_css/form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<script src="_javascript/funcoes.js"></script>
+<script>
+    function calc_total() {
+        var qtd = document.getElementById("cQtd").value;
+        var total = qtd * 1500;
+        document.getElementById("cTot").value = total;
+    }
+</script>
+<!--************************BODY*********************************-->
+
+<body>
+    <div class="container-fluid" style="width: 80%;">
+        <div id="interface">
+
+            <nav id="nav" class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                        <li class="nav-item active" onmouseover="mudaFoto('_imagens/home.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="specs.html">Especificações</a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/fotos.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="fotos.html">Fotos</a>
+                        </li>
+
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/multimidia.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a class="nav-link"
+                                href="multimidia.html"> Multimídia </a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/contato.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a class="nav-link"
+                                href="fale-conosco.html"> Fale Conosco </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- header begin -->
+            <header id="cabecalho" class="mb-5 border-bottom">
+                <div class="col-sm-12 mt-5 d-flex justify-content-between" style="height: 10vh;">
+                    <div>
+                        <a href="#rodape">
+                            <h1>Google Glass</h1>
+                        </a>
+                        <h2 class="">A revolução do Google está chegando</h2>
+                    </div>
+
+                    <div>
+                        <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+                    </div>
+                </div>
+            </header>
+            <!-- header end -->
+
+            <div class="ml-5 mb-4" id="artigo-cabecalho">
+                <hgroup>
+                    <h3>Glass > Especificações</h3>
+                    <h1>Raio-X no Google Glass</h1>
+                    <h2>por Bruno F.</h2>
+                    <h5>Atualizado em 04/04/2020
+                    </h5>
+                </hgroup>
+            </div>
+
+
+            <section>
+                <article id="noticia-principal">
+
+                    <form id="form-contato" method="POST" oninput="calc_total()"
+                        action="https://formspree.io/brfranzon@gmail.com">
+
+                        <fieldset id="usuario">
+                            <legend> Identificação do Usuário X </legend>
+
+                            <div class="form-group">
+                                <label for="cNome">Nome: </label>
+                                <input type="text" name="tNome" id="cNome" size="30" maxlength="30"
+                                    placeholder="Nome Completo" required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="cNome">Senha: </label>
+                                <input type="password" name="tSenha" id="cSenha" size="9" maxlength="8"
+                                    placeholder="Senha de 8 dígitos" required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="cNome">Email: </label>
+                                <input type="email" name="tEmail" id="cEmail" size="30" maxlength="40"
+                                    placeholder="E-Mail">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cData">Data de Nasc.:</label>
+                                <input type="date" name="tData" id="cData" placeholder="Data de Nascismento" />
+                            </div>
+
+                            <div class="form-group">
+                                <legend id="sexo">Sexo:</legend>
+                                <input type="radio" name="tSexo" id="cMasculino" checked />
+                                <label for="cMasculino">Masculino</label>
+                                <br>
+                                <input type="radio" name="tSexo" id="cFeminino">
+                                <label for="cFeminino">Feminino</label>
+                            </div>
+                        </fieldset>
+
+
+
+                        <fieldset id="endereco">
+                            <legend> Endereço do Usuário </legend>
+                            <div class="form-group">
+                                <label for="cLog">Logradouro: </label>
+                                <input type="text" name="tLog" id="cLog" size="40"
+                                    placeholder="Rua, Avenida, Bairoo, etc..." />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cNumber">Número: </label>
+                                <input type="number" name="tNumber" id="cNumber" min="0" placeholder="Número" size="5"
+                                    maxlength="5" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cEstado"> Estado:
+                                    <input type="text" name="tEstado" id="cEstado" placeholder="Estado" />
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cCidade">Cidade:
+                                    <input type="text" name="tCidade" id="cCidade" placeholder="Cidade">
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset id="mensagem">
+                            <legend> Mensagem do Usuário </legend>
+
+                            <div class="form-group">
+                                <label> Grau de Urgência: </label>
+                                <input type="range" name="tUrg" id="cUrg" min="0" max="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label id="mensagem"> Mensagem:</label>
+                                <textarea id="textarea" cols="45" rows="5"
+                                    placeholder="Deixa aqui sua Mensagem"> </textarea>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset id="pedido">
+                            <legend> Quero um Google Glass </legend>
+
+                            <div class="form-group">
+                                <input type="checkbox" name="tCheck" id="cCheck" checked>
+                                <label> Gostaria de adquirir um Google Glass quando disponível </label>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label> Cor: </label>
+                                <input type="color"> </p>
+                            </div>
+
+                            <div class="form-group">
+                                <label> Quantidade: </label>
+                                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
+                            </div>
+
+                   
+                            <div class="form-group">
+                                <label> Preço Total: R$</label>
+                                <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly>
+                            </div>
+
+                        </fieldset>
+
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar Mensagem">
+                    </form>
+
+                </article>
+            </section>
+
+            <footer id="rodape">
+                <p> &copy; Copyright 2013 - by Bruno Franzon </br>
+                    <a href="http://www.facebook.com" target="blank">Facebook </a> |
+                    <a href="https://twitter.com" target="blank">Twitter</a>
+                </p>
+            </footer>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

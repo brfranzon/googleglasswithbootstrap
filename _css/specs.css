@@ -1,0 +1,28 @@
+body {
+    font-family: Arial,  sans-serif;
+    background-color: #dddddd;
+    color: rgb(0,0,0,1);
+}
+
+
+section#conteudo{
+    width: 1600px;
+    margin: auto;
+}
+
+iframe#frame-spec{
+    width: 100%;
+    height: 30vh;
+   
+    overflow: hidden;
+    border: none;
+}
+
+iframe#frame-spec::-webkit-scrollbar{
+    display: none;
+}
+
+img#glass-esquema{
+    width: 100%;
+    height: 30vh;
+}

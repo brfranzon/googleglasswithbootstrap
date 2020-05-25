@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--************************HEAD********************************-->
+
+<head>
+    <meta charset="pt-br">
+    <title>Google Glass</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/specs.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+
+<script src="_javascript/funcoes.js">
+</script>
+
+
+<!--************************BODY*********************************-->
+
+<body>
+    <div class="container-fluid" style="width: 80%;">
+        <div id="interface">
+            <nav id="nav" class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                        <li class="nav-item active" onmouseover="mudaFoto('_imagens/home.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="specs.html">Especificações</a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/fotos.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')">
+                            <a class="nav-link" href="fotos.html">Fotos</a>
+                        </li>
+
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/multimidia.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a class="nav-link"
+                                href="multimidia.html"> Multimídia </a>
+                        </li>
+
+                        <li class="nav-item" onmouseover="mudaFoto('_imagens/contato.png')"
+                            onmouseout="mudaFoto('_imagens/glass-oculos-preto-peq.png')"> <a class="nav-link"
+                                href="fale-conosco.html"> Fale Conosco </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- header begin -->
+            <header id="cabecalho" class="mb-5 border-bottom">
+                <div class="col-sm-12 mt-5 d-flex justify-content-between" style="height: 10vh;">
+                    <div>
+                        <a href="#rodape">
+                            <h1>Google Glass</h1>
+                        </a>
+                        <h2 class="">A revolução do Google está chegando</h2>
+                    </div>
+
+                    <div>
+                        <img id="icone" src="_imagens/glass-oculos-preto-peq.png">
+                    </div>
+                </div>
+            </header>
+            <!-- header end -->
+
+            <div class="col-sm-12">
+                <div class="row bg-info">
+
+                    <div class="ml-5 mb-4" id="artigo-cabecalho">
+                        <hgroup>
+                            <h3>Glass > Especificações</h3>
+                            <h1>Raio-X no Google Glass</h1>
+                            <h2>por Bruno F.</h2>
+                            <h5>Atualizado em 04/04/2020
+                            </h5>
+                        </hgroup>
+                    </div>
+
+
+                    <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos
+                        do
+                        Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas
+                        informações.
+                    </p>
+
+                    <div class=" row mt-5 mb-5 mx-auto">
+                        <div class= "col-sm-6">
+                            <img src="_imagens/glass-esquema-marcado.jpg" id="glass-esquema" usemap="#meumapa"
+                                onmouseout="mudaFotoIframe()">
+                        </div>
+
+                        <map name="meumapa">
+                            <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" />
+                            <area shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela">
+                        </map>
+
+                        <div class= "col-sm-6">
+                            <iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Footer -->
+                <footer class="page-footer font-small blue border-top">
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/"> by Bruno Franzon</a>
+                    </div>
+                    <!-- Copyright -->
+
+                </footer>
+                <!-- Footer -->
+            </div>
+
+            <section id="corpo-especificacoes">
+
+            </section>
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
