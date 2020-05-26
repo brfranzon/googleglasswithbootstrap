@@ -15,10 +15,6 @@ body {
     color: rgb(0,0,0,1);
 }
 
-div#interface{
-    background-color: #ffffff; 
-    box-shadow: 0px 0px 10px black;
-}
 
 
 header#cabecalho h1{
@@ -84,24 +80,6 @@ opacity: 1;
 /*Formatacao Section*/
 
 
-
-article#noticia-principal header#artigo-cabecalho h1{
-    font-size: 20pt;
-    font-family: "Fontelogo", sans-serif;
-    color: #606060;
-    margin: 0px;
-}
-article#noticia-principal header#artigo-cabecalho h2{
-    font-size: 13pt;
-    color: #cecece;
-    background-color: #ffffff;
-    margin: 0px;
-}
-article#noticia-principal header#artigo-cabecalho h3{
-font-size: 12px;
-font-weight: bold;
-color: #000000;
-}
 
 .direita{
     text-align: right;

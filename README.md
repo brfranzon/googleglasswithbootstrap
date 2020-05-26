@@ -1,6 +1,5 @@
 # Google Glass!
-
-This is my first Website using HTML5, CSS and Java Script!
+Website using HTML5, CSS and Java Script!
 
 1. Vídeo 4. Área head é para conf. comportamentais do site. Area body é o conteúdo do site, tudo aquilo que aparecer tem de estar nesta
 área. 
